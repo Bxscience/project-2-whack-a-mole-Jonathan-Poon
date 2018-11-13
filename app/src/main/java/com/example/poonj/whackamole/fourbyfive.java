@@ -104,9 +104,9 @@ public class fourbyfive extends AppCompatActivity {
     }
     public void toFinal() {
         mediaplayer.stop();
-        Intent intent = new Intent(getApplicationContext(), finalScreen.class);
-        startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), finalScreen.class);     
         intent.putExtra("finishedScore", score);
+        startActivity(intent);
     }
     private final View.OnClickListener buttonListener = new View.OnClickListener() {
         @Override
